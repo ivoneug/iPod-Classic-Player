@@ -10,6 +10,7 @@ import AVFoundation
 
 class ViewModel: ObservableObject {
     @Published private var model: Model
+    private var player: AVPlayer?
     
     var menu: [MenuItem] {
         model.menuRoot
@@ -20,6 +21,7 @@ class ViewModel: ObservableObject {
     
     init() {
         model = Model()
+        model.onSongSelect = self.playMenuItem
     }
     
     func selectNextMenuItem() {
@@ -32,6 +34,24 @@ class ViewModel: ObservableObject {
     
     func enterMenuItem() {
         model.enterMenuItem()
+    }
+    
+    func playMenuItem() {
+        DispatchQueue.main.async { [self] in
+            playMenuItemInternal()
+        }
+    }
+    
+    private func playMenuItemInternal() {
+        guard let nowPlaying = model.nowPlayingSong else {
+            return
+        }
+        guard let path = nowPlaying.path else {
+            return
+        }
+        
+        player = AVPlayer(url: URL(fileURLWithPath: path))
+        player?.play()
     }
     
     func playTapGesture() {

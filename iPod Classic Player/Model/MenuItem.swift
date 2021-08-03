@@ -10,6 +10,7 @@ import Foundation
 struct MenuItem: Identifiable, Equatable {
     var id: Int
     var name: String
+    var path: String?
     var children: [MenuItem]
     
     init(id: Int, name: String) {

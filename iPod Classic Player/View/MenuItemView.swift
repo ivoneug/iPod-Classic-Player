@@ -14,6 +14,7 @@ struct MenuItemView: View {
     var body: some View {
         HStack {
             Text(menuItem.name)
+                .lineLimit(1)
             Spacer()
             if menuItem.children.count > 0 || menuItem.id == 0 {
                 Image(systemName: "chevron.right")

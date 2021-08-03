@@ -9,12 +9,7 @@ import Foundation
 
 struct Model {
     private var menu: [MenuItem] = [
-        MenuItem(id: 1, name: "Music", children: [
-            MenuItem(id: 101, name: "Song 1"),
-            MenuItem(id: 102, name: "Song 2"),
-            MenuItem(id: 103, name: "Song 3"),
-            MenuItem(id: 104, name: "Song 4")
-        ]),
+        MenuItem(id: 1, name: "Music"),
         MenuItem(id: 2, name: "Extras", children: [
             MenuItem(id: 201, name: "Extra 1"),
             MenuItem(id: 202, name: "Extra 2"),
@@ -30,10 +25,38 @@ struct Model {
     private var backMenuItem = MenuItem(id: 0, name: "Back", children: [])
     
     var menuRoot: [MenuItem]
-    var previousMenuRoot: [MenuItem]
+    private var previousMenuRoot: [MenuItem]
     var selectedMenuItem: MenuItem
     
+    private var playerModel: PlayerModel
+    var onSongSelect: (() -> Void)?
+    
+    var nowPlayingSong: MenuItem? {
+        return playerModel.nowPlayingSong
+    }
+    
     init() {
+        menuRoot = menu
+        previousMenuRoot = []
+        selectedMenuItem = menu[0]
+        
+        playerModel = PlayerModel()
+        initPlayer()
+    }
+    
+    mutating func initPlayer() {
+        let paths = Bundle.main.paths(forResourcesOfType: nil, inDirectory: "Music")
+        
+        for index in 0..<paths.count {
+            let path = paths[index]
+            var item = MenuItem(id: 100 + index + 1, name: path.components(separatedBy: "/").last!)
+            item.path = path
+            
+            menu[0].children.append(item)
+        }
+        
+        playerModel.trackList = menu[0].children
+        
         menuRoot = menu
         previousMenuRoot = []
         selectedMenuItem = menu[0]
@@ -69,6 +92,12 @@ struct Model {
         } else if selectedMenuItem.children.count != 0 {
             previousMenuRoot = menuRoot
             menuRoot = [backMenuItem] + selectedMenuItem.children
+        } else if selectedMenuItem.path != nil {
+            playerModel.nowPlayingIndex = playerModel.trackList.firstIndex(of: selectedMenuItem)!
+            if let callback = onSongSelect {
+                callback()
+            }
+            return
         } else {
             return
         }

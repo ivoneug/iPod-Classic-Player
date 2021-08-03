@@ -19,7 +19,41 @@
 		FD156B8726B5C86E00F8D192 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD156B8626B5C86E00F8D192 /* HeaderView.swift */; };
 		FD156B8926B5CB0900F8D192 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD156B8826B5CB0900F8D192 /* ViewModel.swift */; };
 		FD156B8B26B67EAA00F8D192 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD156B8A26B67EAA00F8D192 /* ViewConstants.swift */; };
+		FD156BC626B933A800F8D192 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD156BC526B933A800F8D192 /* PlayerModel.swift */; };
+		FD156BCE26B9D95600F8D192 /* A Day to Remember.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD156BC726B9D95600F8D192 /* A Day to Remember.mp3 */; };
+		FD156BCF26B9D95600F8D192 /* Tenderness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD156BC826B9D95600F8D192 /* Tenderness.mp3 */; };
+		FD156BD026B9D95600F8D192 /* Cute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD156BC926B9D95600F8D192 /* Cute.mp3 */; };
+		FD156BD126B9D95600F8D192 /* Ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD156BCA26B9D95600F8D192 /* Ukulele.mp3 */; };
+		FD156BD226B9D95600F8D192 /* Sweet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD156BCB26B9D95600F8D192 /* Sweet.mp3 */; };
+		FD156BD326B9D95600F8D192 /* Happiness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD156BCC26B9D95600F8D192 /* Happiness.mp3 */; };
+		FD156BD426B9D95600F8D192 /* Smile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD156BCD26B9D95600F8D192 /* Smile.mp3 */; };
+		FD156BD526B9D95F00F8D192 /* A Day to Remember.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD156BC726B9D95600F8D192 /* A Day to Remember.mp3 */; };
+		FD156BD626B9D95F00F8D192 /* Cute.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD156BC926B9D95600F8D192 /* Cute.mp3 */; };
+		FD156BD726B9D95F00F8D192 /* Happiness.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD156BCC26B9D95600F8D192 /* Happiness.mp3 */; };
+		FD156BD826B9D95F00F8D192 /* Smile.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD156BCD26B9D95600F8D192 /* Smile.mp3 */; };
+		FD156BD926B9D95F00F8D192 /* Sweet.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD156BCB26B9D95600F8D192 /* Sweet.mp3 */; };
+		FD156BDA26B9D95F00F8D192 /* Tenderness.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD156BC826B9D95600F8D192 /* Tenderness.mp3 */; };
+		FD156BDB26B9D95F00F8D192 /* Ukulele.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD156BCA26B9D95600F8D192 /* Ukulele.mp3 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD156BB226B8883700F8D192 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Music;
+			dstSubfolderSpec = 7;
+			files = (
+				FD156BD526B9D95F00F8D192 /* A Day to Remember.mp3 in CopyFiles */,
+				FD156BD626B9D95F00F8D192 /* Cute.mp3 in CopyFiles */,
+				FD156BD726B9D95F00F8D192 /* Happiness.mp3 in CopyFiles */,
+				FD156BD826B9D95F00F8D192 /* Smile.mp3 in CopyFiles */,
+				FD156BD926B9D95F00F8D192 /* Sweet.mp3 in CopyFiles */,
+				FD156BDA26B9D95F00F8D192 /* Tenderness.mp3 in CopyFiles */,
+				FD156BDB26B9D95F00F8D192 /* Ukulele.mp3 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FD156B6826B5C30600F8D192 /* iPod Classic Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPod Classic Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +70,14 @@
 		FD156B8626B5C86E00F8D192 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		FD156B8826B5CB0900F8D192 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FD156B8A26B67EAA00F8D192 /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
+		FD156BC526B933A800F8D192 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		FD156BC726B9D95600F8D192 /* A Day to Remember.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A Day to Remember.mp3"; sourceTree = "<group>"; };
+		FD156BC826B9D95600F8D192 /* Tenderness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tenderness.mp3; sourceTree = "<group>"; };
+		FD156BC926B9D95600F8D192 /* Cute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cute.mp3; sourceTree = "<group>"; };
+		FD156BCA26B9D95600F8D192 /* Ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ukulele.mp3; sourceTree = "<group>"; };
+		FD156BCB26B9D95600F8D192 /* Sweet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sweet.mp3; sourceTree = "<group>"; };
+		FD156BCC26B9D95600F8D192 /* Happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Happiness.mp3; sourceTree = "<group>"; };
+		FD156BCD26B9D95600F8D192 /* Smile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Smile.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +110,7 @@
 		FD156B6A26B5C30600F8D192 /* iPod Classic Player */ = {
 			isa = PBXGroup;
 			children = (
+				FD156B8D26B8815A00F8D192 /* Music */,
 				FD156B7A26B5C36200F8D192 /* View */,
 				FD156B7B26B5C36A00F8D192 /* Model */,
 				FD156B6B26B5C30600F8D192 /* iPod_Classic_PlayerApp.swift */,
@@ -105,8 +148,23 @@
 				FD156B7C26B5C37F00F8D192 /* MenuItem.swift */,
 				FD156B7E26B5C3B200F8D192 /* Model.swift */,
 				FD156B8826B5CB0900F8D192 /* ViewModel.swift */,
+				FD156BC526B933A800F8D192 /* PlayerModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FD156B8D26B8815A00F8D192 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				FD156BC726B9D95600F8D192 /* A Day to Remember.mp3 */,
+				FD156BC926B9D95600F8D192 /* Cute.mp3 */,
+				FD156BCC26B9D95600F8D192 /* Happiness.mp3 */,
+				FD156BCD26B9D95600F8D192 /* Smile.mp3 */,
+				FD156BCB26B9D95600F8D192 /* Sweet.mp3 */,
+				FD156BC826B9D95600F8D192 /* Tenderness.mp3 */,
+				FD156BCA26B9D95600F8D192 /* Ukulele.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +177,7 @@
 				FD156B6426B5C30600F8D192 /* Sources */,
 				FD156B6526B5C30600F8D192 /* Frameworks */,
 				FD156B6626B5C30600F8D192 /* Resources */,
+				FD156BB226B8883700F8D192 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -166,8 +225,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD156BCE26B9D95600F8D192 /* A Day to Remember.mp3 in Resources */,
 				FD156B7326B5C30800F8D192 /* Preview Assets.xcassets in Resources */,
+				FD156BD026B9D95600F8D192 /* Cute.mp3 in Resources */,
 				FD156B7026B5C30800F8D192 /* Assets.xcassets in Resources */,
+				FD156BD226B9D95600F8D192 /* Sweet.mp3 in Resources */,
+				FD156BD126B9D95600F8D192 /* Ukulele.mp3 in Resources */,
+				FD156BD326B9D95600F8D192 /* Happiness.mp3 in Resources */,
+				FD156BCF26B9D95600F8D192 /* Tenderness.mp3 in Resources */,
+				FD156BD426B9D95600F8D192 /* Smile.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD156B8B26B67EAA00F8D192 /* ViewConstants.swift in Sources */,
+				FD156BC626B933A800F8D192 /* PlayerModel.swift in Sources */,
 				FD156B8326B5C3DF00F8D192 /* WheelView.swift in Sources */,
 				FD156B8926B5CB0900F8D192 /* ViewModel.swift in Sources */,
 				FD156B7D26B5C37F00F8D192 /* MenuItem.swift in Sources */,
